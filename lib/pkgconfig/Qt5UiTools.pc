@@ -1,0 +1,14 @@
+prefix=/home/gzleo/Qt5.12.0/5.12.0/android_arm64_v8a
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 UiTools
+Description: Qt UiTools module
+Version: 5.12.0
+Libs: -L${libdir} -lQt5UiTools 
+Libs.private: -L/home/gzleo/Qt5.12.0/5.12.0/android_arm64_v8a/lib -lQt5Widgets -L/opt/android/android-ndk-r18b/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -lQt5Gui -lQt5Core -lQt5Widgets -L/home/gzleo/Qt5.12.0/5.12.0/android_arm64_v8a/lib -L/opt/android/android-ndk-r18b/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -lQt5Gui -lQt5Core -lGLESv2 -L/opt/android/android-ndk-r18b/sources/cxx-stl/llvm-libc++/libs/arm64-v8a /opt/android/android-ndk-r18b/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++.so.21 -llog -lz -lm -ldl -lc 
+Cflags: -DQT_UITOOLS_LIB -I${includedir}/QtUiTools -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets
+
